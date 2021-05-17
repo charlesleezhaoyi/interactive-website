@@ -27,6 +27,7 @@ export default function Intro() {
                     <h1>Charles Lee,</h1>
                     <h3>Software Engineer</h3>
                     <h3>with past experiences in <span ref = {textRef}></span></h3>
+                    <button className = "resume">Detailed Resume</button>
                 </div>
                 <a href = "#portfolio">
                     <img src = "assets/down.png" alt= "Down arrow"/>

@@ -22,6 +22,7 @@
 
             display: flex;
             align-items: center;
+            flex: 0.3;
 
             .logo{
                 font-size: 40px;
@@ -53,22 +54,41 @@
         }
         .right{
 
-            .hamburger{
-                width: 32px;
-                height: 25px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;//when mouse hover over, signal to users to click
-                overflow: hidden; 
+            flex: 0.7;
 
-                span{
-                    width: 100%;
-                    height: 3px;
-                    background-color: $mainColor;
-                    transform-origin: left;
-                    transition: all 0.5s ease;
-                    z-index: 3;
+            .menu{
+                
+                width: 100%;
+                height: 65px;
+                display: inline;
+                overflow: hidden;
+                background-color: white;
+
+                ul{
+                    display: inline;
+                    padding: 0;
+                    list-style: none;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color:$mainColor; 
+                    width: 60%; //fixed width so when hovered over - the width doesn't change.
+            
+                    li{
+                        display: inline;
+                        margin-top: 30px;
+                        margin-left: 45px; 
+                        //margin-bottom: 25px; //vertical space between each li
+                        a {
+                            display: inline;
+                            font-size: inherit;
+                            color: inherit;
+                            text-decoration: none;
+                        }
+            
+                        &:hover {
+                            font-weight: 500;
+                        }
+                    }
                 }
             }
         }

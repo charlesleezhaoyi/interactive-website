@@ -1,17 +1,31 @@
 import "./topbar.scss"
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Topbar() {
     return (
-        <div className={"topbar " + (menuOpen && "active")}>
+        <div className="topbar">
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Charles Lee</a>
                 </div>
                 <div className="right">
-                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                        <span className="line1"></span>
-                        <span className="line2"></span>
-                        <span className="line3"></span>
+                    <div className="menu">
+                        <ul>
+                            <li>
+                                <a href="#intro">Home</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#works">Works</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

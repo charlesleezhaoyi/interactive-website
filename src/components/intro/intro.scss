@@ -96,6 +96,18 @@
                     }
                 }
             }
+            .resume{
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 20px;
+                width: 140px;
+                height: 40px;
+                color: white;
+                background-color: $mainColor;
+                border-radius: 5px;
+                overflow: hidden;
+            }
         }
         a {
             position: absolute;
