@@ -7,7 +7,7 @@
         background-color: lightsalmon;
         position: relative;
         top: 70px;
-        scroll-behavior: auto; //changes speed of snap scrolling
+        scroll-behavior: smooth; //changes speed of snap scrolling
         scroll-snap-type: y mandatory; /*enables snap scrolling*/
         scrollbar-width: none; //for removing scrollbar on firefox
         &::-webkit-scrollbar{ //for removing scrollbar on Google Chrome

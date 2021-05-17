@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.skills{
+    background-color: white;
+    color: $mainColor;
+
+    tr{
+        width: 50%;
+        padding: 0;
+        margin:0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    th{
+        width: 50%;
+        height: 20px;
+        font-size: 32px;
+    }
+    td{
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skillscontainer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

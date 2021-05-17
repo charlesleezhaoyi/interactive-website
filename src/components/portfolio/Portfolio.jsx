@@ -2,7 +2,6 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import { useState, useEffect } from "react";
 import {
-    featuredPortfolio,
     internPortfolio,
     hackPortfolio,
     awardPortfolio,
@@ -17,10 +16,6 @@ export default function Portfolio() {
 
     /*Array destructuring for mapping of items to each "card"*/
     const list = [
-        {
-            id: "featured",
-            title: "Featured",
-        },
         {
             id: "intern",
             title: "Internships",
@@ -42,9 +37,6 @@ export default function Portfolio() {
     useEffect(() => {
 
         switch (selected) {
-            case "featured":
-                setData(featuredPortfolio);
-                break;
             case "intern":
                 setData(internPortfolio);
                 break;
@@ -58,7 +50,7 @@ export default function Portfolio() {
                 setData(sportPortfolio);
                 break;
             default:
-                setData(featuredPortfolio)
+                setData(internPortfolio)
 
         }
 
