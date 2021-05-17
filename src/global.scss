@@ -1,0 +1,9 @@
+$mainColor: #1C3665;
+
+$width: 768px;
+
+@mixin mobile { //Sass 
+    @media (max-width: #{$width}){
+        @content
+    }
+}

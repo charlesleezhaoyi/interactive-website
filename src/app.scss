@@ -1,0 +1,23 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px); /*100% height minus 70px for navbar*/
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth; //changes speed of snap scrolling
+        scroll-snap-type: y mandatory; /*enables snap scrolling*/
+        scrollbar-width: none; //for removing scrollbar on firefox
+        &::-webkit-scrollbar{ //for removing scrollbar on Google Chrome
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start; /*enables snap scrolling for components*/
+        }
+    }
+}
