@@ -7,6 +7,10 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import "./app.scss";
 import { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function App() {
 
